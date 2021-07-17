@@ -3,12 +3,19 @@
 
 #endif //VERNAN_VERNAN_H
 
-typedef struct file {
+typedef struct {
     FILE* file;
     int size;
-} file;
+} file_t;
 
 int getSize(const char*file);
-int countBlocks(file key, file input);
-char* loadKey(file key, char* keyArr);
-void encryptDecrypt(const char*keyFile, const char*inputFile, const char*outputFile);
+
+int countBlocks(file_t keyFile, file_t inputFile);
+
+char* loadKey(file_t keyFile, char* keyArr);
+
+void encryptDecrypt(const char*keyFilePath, const char*inputFilePath, const char*outputFilePath);
+
+void applyXOR(file_t keyFile, file_t inputFile, file_t outputFile);
+
+void handleEmptyKey(file_t keyFile, file_t inputFile, file_t outputFile);
