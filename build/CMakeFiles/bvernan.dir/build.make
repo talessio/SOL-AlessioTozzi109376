@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.21.0/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alessio/Coding/GitHub/AlessioTozzi109376
+CMAKE_SOURCE_DIR = /Users/alessio/coding/github/AlessioTozzi109376
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alessio/Coding/GitHub/AlessioTozzi109376/build
+CMAKE_BINARY_DIR = /Users/alessio/coding/github/AlessioTozzi109376/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/bvernan.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/bvernan.dir/flags.make
 CMakeFiles/bvernan.dir/main.c.o: CMakeFiles/bvernan.dir/flags.make
 CMakeFiles/bvernan.dir/main.c.o: ../main.c
 CMakeFiles/bvernan.dir/main.c.o: CMakeFiles/bvernan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alessio/Coding/GitHub/AlessioTozzi109376/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/bvernan.dir/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bvernan.dir/main.c.o -MF CMakeFiles/bvernan.dir/main.c.o.d -o CMakeFiles/bvernan.dir/main.c.o -c /Users/alessio/Coding/GitHub/AlessioTozzi109376/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alessio/coding/github/AlessioTozzi109376/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/bvernan.dir/main.c.o"
+	/opt/homebrew/bin/gcc-11 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bvernan.dir/main.c.o -MF CMakeFiles/bvernan.dir/main.c.o.d -o CMakeFiles/bvernan.dir/main.c.o -c /Users/alessio/coding/github/AlessioTozzi109376/main.c
 
 CMakeFiles/bvernan.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bvernan.dir/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alessio/Coding/GitHub/AlessioTozzi109376/main.c > CMakeFiles/bvernan.dir/main.c.i
+	/opt/homebrew/bin/gcc-11 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alessio/coding/github/AlessioTozzi109376/main.c > CMakeFiles/bvernan.dir/main.c.i
 
 CMakeFiles/bvernan.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bvernan.dir/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alessio/Coding/GitHub/AlessioTozzi109376/main.c -o CMakeFiles/bvernan.dir/main.c.s
+	/opt/homebrew/bin/gcc-11 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alessio/coding/github/AlessioTozzi109376/main.c -o CMakeFiles/bvernan.dir/main.c.s
 
 CMakeFiles/bvernan.dir/bvernan.c.o: CMakeFiles/bvernan.dir/flags.make
 CMakeFiles/bvernan.dir/bvernan.c.o: ../bvernan.c
 CMakeFiles/bvernan.dir/bvernan.c.o: CMakeFiles/bvernan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alessio/Coding/GitHub/AlessioTozzi109376/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/bvernan.dir/bvernan.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bvernan.dir/bvernan.c.o -MF CMakeFiles/bvernan.dir/bvernan.c.o.d -o CMakeFiles/bvernan.dir/bvernan.c.o -c /Users/alessio/Coding/GitHub/AlessioTozzi109376/bvernan.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alessio/coding/github/AlessioTozzi109376/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/bvernan.dir/bvernan.c.o"
+	/opt/homebrew/bin/gcc-11 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bvernan.dir/bvernan.c.o -MF CMakeFiles/bvernan.dir/bvernan.c.o.d -o CMakeFiles/bvernan.dir/bvernan.c.o -c /Users/alessio/coding/github/AlessioTozzi109376/bvernan.c
 
 CMakeFiles/bvernan.dir/bvernan.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bvernan.dir/bvernan.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alessio/Coding/GitHub/AlessioTozzi109376/bvernan.c > CMakeFiles/bvernan.dir/bvernan.c.i
+	/opt/homebrew/bin/gcc-11 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alessio/coding/github/AlessioTozzi109376/bvernan.c > CMakeFiles/bvernan.dir/bvernan.c.i
 
 CMakeFiles/bvernan.dir/bvernan.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bvernan.dir/bvernan.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alessio/Coding/GitHub/AlessioTozzi109376/bvernan.c -o CMakeFiles/bvernan.dir/bvernan.c.s
+	/opt/homebrew/bin/gcc-11 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alessio/coding/github/AlessioTozzi109376/bvernan.c -o CMakeFiles/bvernan.dir/bvernan.c.s
 
 # Object files for target bvernan
 bvernan_OBJECTS = \
@@ -109,7 +109,7 @@ bvernan: CMakeFiles/bvernan.dir/main.c.o
 bvernan: CMakeFiles/bvernan.dir/bvernan.c.o
 bvernan: CMakeFiles/bvernan.dir/build.make
 bvernan: CMakeFiles/bvernan.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alessio/Coding/GitHub/AlessioTozzi109376/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable bvernan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alessio/coding/github/AlessioTozzi109376/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable bvernan"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bvernan.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/bvernan.dir/clean:
 .PHONY : CMakeFiles/bvernan.dir/clean
 
 CMakeFiles/bvernan.dir/depend:
-	cd /Users/alessio/Coding/GitHub/AlessioTozzi109376/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alessio/Coding/GitHub/AlessioTozzi109376 /Users/alessio/Coding/GitHub/AlessioTozzi109376 /Users/alessio/Coding/GitHub/AlessioTozzi109376/build /Users/alessio/Coding/GitHub/AlessioTozzi109376/build /Users/alessio/Coding/GitHub/AlessioTozzi109376/build/CMakeFiles/bvernan.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/alessio/coding/github/AlessioTozzi109376/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alessio/coding/github/AlessioTozzi109376 /Users/alessio/coding/github/AlessioTozzi109376 /Users/alessio/coding/github/AlessioTozzi109376/build /Users/alessio/coding/github/AlessioTozzi109376/build /Users/alessio/coding/github/AlessioTozzi109376/build/CMakeFiles/bvernan.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/bvernan.dir/depend
 
