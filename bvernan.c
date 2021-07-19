@@ -54,17 +54,20 @@ char* loadKey(file_t keyFile, char* keyArr){
  * @param outputFilePath The path of the encrypted or decrypted output file
  */
 void encryptDecrypt(const char*keyFilePath, const char*inputFilePath, const char*outputFilePath){
+    // int keySize = getSize(keyFilePath);
+    // int inputSize = getSize(inputFilePath);
+    // int outputSize = getSize(outputFilePath);
     file_t keyFile = {fopen(keyFilePath, "r"), getSize(keyFilePath)};
-    file_t outputFile = {fopen(outputFilePath, "w"), getSize(outputFilePath)};
-    file_t inputFile = {fopen(inputFilePath, "r"), getSize(inputFilePath)};
-    if (keyFile.size != -1 || inputFile.size != -1 || outputFile.size != -1) {
+    file_t outputFile = {fopen(outputFilePath, "w"), getSize(inputFilePath)};
+    file_t inputFile = {fopen(inputFilePath, "r"), getSize(outputFilePath)};
+    if (keyFile.size != -1 && inputFile.size != -1) {
         if (keyFile.size == 0) {
             handleEmptyKey(keyFile, inputFile, outputFile);
         } else {
             applyXOR(keyFile, inputFile, outputFile);
-            printf("Done!\n");
         }
-    }
+        printf("Done!\n");
+    } 
     fclose(inputFile.file);
     fclose(outputFile.file);
     fclose(keyFile.file);
