@@ -3,15 +3,14 @@
 
 CMakeFiles/bvernan.dir/bvernan.c.o
  /Users/alessio/Coding/GitHub/AlessioTozzi109376/bvernan.c
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed/stdio.h
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/stdio.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/_stdio.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/cdefs.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_symbol_aliasing.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_posix_availability.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/Availability.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/AvailabilityVersions.h
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed/AvailabilityInternal.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/AvailabilityInternal.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/_types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/machine/_types.h
@@ -56,8 +55,8 @@ CMakeFiles/bvernan.dir/bvernan.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_sigset_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_uid_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/resource.h
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include/stdint.h
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include/stdint.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/stdint.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/_types/_uint8_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/_types/_uint16_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/_types/_uint32_t.h
@@ -82,15 +81,14 @@ CMakeFiles/bvernan.dir/bvernan.c.o
 
 CMakeFiles/bvernan.dir/main.c.o
  /Users/alessio/Coding/GitHub/AlessioTozzi109376/main.c
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed/stdio.h
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/stdio.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/_stdio.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/cdefs.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_symbol_aliasing.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_posix_availability.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/Availability.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/AvailabilityVersions.h
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed/AvailabilityInternal.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/AvailabilityInternal.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/_types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/sys/_types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/machine/_types.h
