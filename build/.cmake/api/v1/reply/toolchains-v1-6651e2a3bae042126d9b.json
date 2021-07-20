@@ -1,0 +1,51 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include",
+						"/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks"
+					],
+					"linkDirectories" : 
+					[
+						"/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0",
+						"/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib"
+					],
+					"linkFrameworkDirectories" : 
+					[
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks"
+					],
+					"linkLibraries" : 
+					[
+						"gcc_s.1.1",
+						"gcc",
+						"gcc"
+					]
+				},
+				"path" : "/opt/homebrew/bin/gcc-11",
+				"version" : "11.1.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
