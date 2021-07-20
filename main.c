@@ -12,7 +12,7 @@ int main(int argc, char **argv) {
     printf("Working on it...\n");
 //    encryptDecrypt("k.txt", "input.txt", "output.txt");
     if (argc != 5) {
-        printf("Wrong number of parameters, %d instead of 4!\n\n", argc);
+        printf("Wrong number of parameters, %d instead of 5!\n\n", argc);
         printInfo();
         return -1;
     }
