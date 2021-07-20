@@ -10,8 +10,7 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
-			"include_directories"
+			"add_executable"
 		],
 		"files" : 
 		[
@@ -24,12 +23,6 @@
 			},
 			{
 				"command" : 0,
-				"file" : 0,
-				"line" : 8,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
 				"file" : 0,
 				"line" : 6,
 				"parent" : 0
@@ -46,13 +39,6 @@
 				},
 				{
 					"fragment" : "-std=gnu99"
-				}
-			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 2,
-					"path" : "/Users/alessio/coding/github/AlessioTozzi109376/."
 				}
 			],
 			"language" : "C",
