@@ -10,7 +10,7 @@ void printInfo() {
 int main(int argc, char **argv) {
     clock_t begin = clock();
     printf("Working on it...\n");
-//    encryptDecrypt("k.txt", "input.txt", "output.txt");
+    // encryptDecrypt("k.txt", "input.txt", "output.txt");
     if (argc != 4) {
         printf("Wrong number of parameters, %d instead of 4!\n\n", argc);
         printInfo();
