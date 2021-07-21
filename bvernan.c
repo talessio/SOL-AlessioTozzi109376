@@ -36,6 +36,7 @@ int countBlocks(file_t keyFile, file_t inputFile) {
 
 /**
  * Loads the key inside an array of char.
+ * Requires allocation of memory before being used!
  * @param keyFile The key used to encrypt or decrypt
  * @param keyArr The array of char values that will house the key
  * @return the array of char
