@@ -5,10 +5,10 @@
 
 typedef struct {
     FILE* file;
-    int size;
+    int length;
 } file_t;
 
-int getSize(const char*file);
+int getLength(const char*file);
 
 int countBlocks(file_t keyFile, file_t inputFile);
 

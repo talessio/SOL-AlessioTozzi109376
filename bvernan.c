@@ -3,11 +3,11 @@
 #include "bvernan.h"
 
 /**
- * Returns size of file.
- * @param file The file whose size is needed
- * @return The int size
+ * Returns length of file.
+ * @param file The file whose length is needed
+ * @return The int length
  */
-int getSize(const char*file){
+int getLength(const char*file){
     int fileLength;
     FILE* f = fopen(file,"r");
     if(f == NULL) {
@@ -21,14 +21,14 @@ int getSize(const char*file){
 }
 
 /**
- * Counts the blocks obtained by dividing input size by key size.
+ * Counts the blocks obtained by dividing input length by key length.
  * @param keyFile The key used to encrypt or decrypt
  * @param inputFile The file to be encrypted or decrypted
  * @return The int number of blocks
  */
 int countBlocks(file_t keyFile, file_t inputFile) {
-    int nBlocks = inputFile.size / keyFile.size;
-    if ((inputFile.size % keyFile.size) != 0) {
+    int nBlocks = inputFile.length / keyFile.length;
+    if ((inputFile.length % keyFile.length) != 0) {
         nBlocks += 1;
     }
     return nBlocks;
@@ -41,7 +41,7 @@ int countBlocks(file_t keyFile, file_t inputFile) {
  * @return the array of char
  */
 char* loadKey(file_t keyFile, char* keyArr){
-    for (int i = 0; i < keyFile.size; ++i) {
+    for (int i = 0; i < keyFile.length; ++i) {
         keyArr[i] = (char)fgetc(keyFile.file);
     }
     return keyArr;
@@ -54,11 +54,11 @@ char* loadKey(file_t keyFile, char* keyArr){
  * @param outputFilePath The path of the encrypted or decrypted output file
  */
 void encryptDecrypt(const char*keyFilePath, const char*inputFilePath, const char*outputFilePath){
-    file_t keyFile = {fopen(keyFilePath, "r"), getSize(keyFilePath)};
-    file_t inputFile = {fopen(inputFilePath, "r"), getSize(inputFilePath)};
-    if (keyFile.size != -1 && inputFile.size != -1) {
-        file_t outputFile = {fopen(outputFilePath, "w"), getSize(outputFilePath)};
-        if (keyFile.size == 0) {
+    file_t keyFile = {fopen(keyFilePath, "r"), getLength(keyFilePath)};
+    file_t inputFile = {fopen(inputFilePath, "r"), getLength(inputFilePath)};
+    if (keyFile.length != -1 && inputFile.length != -1) {
+        file_t outputFile = {fopen(outputFilePath, "w"), getLength(outputFilePath)};
+        if (keyFile.length == 0) {
             handleEmptyKey(keyFile, inputFile, outputFile);
         } else {
             applyXOR(keyFile, inputFile, outputFile);
@@ -78,16 +78,16 @@ void encryptDecrypt(const char*keyFilePath, const char*inputFilePath, const char
  */
 void applyXOR(file_t keyFile, file_t inputFile, file_t outputFile) {
     int numberOfBlocks = countBlocks(keyFile, inputFile);
-    char* keyArray = malloc(keyFile.size);
+    char* keyArray = malloc(keyFile.length);
     loadKey(keyFile, keyArray);
     for (int i = 0; i<numberOfBlocks; i++) {
-        for (int j = 0; j<keyFile.size; j++) {
+        for (int j = 0; j<keyFile.length; j++) {
             int c = fgetc(inputFile.file);
             if (c == EOF) {
                 break;
             } else {
                 int k;
-                k = (i + j) % keyFile.size;
+                k = (i + j) % keyFile.length;
                 c = c ^ keyArray[k];
                 fputc((c), outputFile.file);
             }
