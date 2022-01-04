@@ -1,1 +1,7 @@
+# miscellaneous
 .DS_Store
+
+# production
+/.vscode
+/.idea
+/build
